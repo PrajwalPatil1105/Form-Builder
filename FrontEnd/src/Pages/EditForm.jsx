@@ -170,6 +170,28 @@ function EditForm() {
     setShowInputTypes(!showInputTypes);
   };
 
+  const DragHandleIcon = () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="text-gray-400 hover:text-gray-600"
+    >
+      <circle cx="5" cy="9" r="1" />
+      <circle cx="12" cy="9" r="1" />
+      <circle cx="19" cy="9" r="1" />
+      <circle cx="5" cy="15" r="1" />
+      <circle cx="12" cy="15" r="1" />
+      <circle cx="19" cy="15" r="1" />
+    </svg>
+  );
+
   if (loading) {
     return (
       <div className="container mx-auto px-4 py-8 flex justify-center items-center h-screen">
@@ -255,6 +277,9 @@ function EditForm() {
                 onDrop={() => handleDrop(index)}
                 className="cursor-move border-2 border-dashed border-gray-200 p-2 rounded-lg hover:border-blue-300 transition-colors"
               >
+                <div className="cursor-grab ml-28 mt-0 mb-2 p-0">
+                  <DragHandleIcon />
+                </div>
                 <FormInput
                   input={input}
                   onDelete={() => handleDeleteInput(index)}
