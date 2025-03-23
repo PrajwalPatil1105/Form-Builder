@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { DragDropProvider } from "./components/DragDropContext";
+import { DragDropProvider } from "./Components/DragDropContext";
 import Home from "./Pages/Home";
 import CreateForm from "./Pages/CreateForm";
 import EditForm from "./Pages/EditForm";
