@@ -94,7 +94,7 @@ function ViewForm() {
           <h2 className="text-2xl font-bold mt-4 mb-2">Form Submitted!</h2>
           <p className="text-gray-600 mb-6">Thank you for your submission.</p>
           <a
-            href="/"
+            href="/home"
             className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-colors duration-300"
           >
             Return Home
