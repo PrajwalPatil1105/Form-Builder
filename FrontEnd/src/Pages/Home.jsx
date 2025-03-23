@@ -114,7 +114,7 @@ function Home() {
               >
                 <button
                   onClick={() => {
-                    const shareUrl = `http://localhost:5173/form/${form._id}`;
+                    const shareUrl = `https://form-builder-seven-rho.vercel.app/form/${form._id}`;
                     navigator.clipboard
                       .writeText(shareUrl)
                       .then(() => toast.success("Link copied to clipboard!"))
@@ -193,7 +193,6 @@ function Home() {
                   <p className="text-gray-600 mb-3">
                     {responses.length}{" "}
                     {responses.length === 1 ? "response" : "responses"}
-                    {/* This code demonstrates attention to detail in singular/plural handling */}
                   </p>
                   <Link
                     to={`/form/${form._id}/responses`}
